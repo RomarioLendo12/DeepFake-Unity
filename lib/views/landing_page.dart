@@ -43,7 +43,7 @@ class LandingPage extends StatelessWidget {
                   height: 34,
                 ),
                 Text(
-                  'unity deepfake',
+                  'UNITY DEEPFAKE',
                   textAlign: TextAlign.center,
                   style: mobileH1.copyWith(color: brand900),
                 ),
