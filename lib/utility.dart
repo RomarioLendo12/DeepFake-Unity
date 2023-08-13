@@ -24,6 +24,9 @@ TextStyle mobileH4 = GoogleFonts.inter(
   fontWeight: FontWeight.w600,
 );
 
+TextStyle gifText =
+    GoogleFonts.juliusSansOne(fontSize: 30, color: Colors.white);
+
 // ** DESKTOP HEADINGS
 TextStyle desktopH1 = GoogleFonts.inter(
   fontSize: 48,
