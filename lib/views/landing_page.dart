@@ -1,6 +1,7 @@
 import 'package:deepfake/components/popup_menu_widget.dart';
 import 'package:deepfake/utility.dart';
 import 'package:deepfake/views/information_page.dart';
+import 'package:deepfake/views/upload_video_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -284,12 +285,17 @@ class LandingPage extends StatelessWidget {
                               buttonName: 'Agree',
                               width: 80,
                               height: 44,
-                              callback: () {}),
+                              callback: () {
+                                Get.to(() => const UploadVideoPage(),
+                                    transition: Transition.fadeIn);
+                              }),
                           const SizedBox(
                             height: 10,
                           ),
                           OutlinedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Get.back();
+                            },
                             style: ElevatedButton.styleFrom(
                               side: BorderSide(color: rose600),
                             ),
