@@ -7,23 +7,38 @@ class LandingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBodyBehindAppBar: true,
       backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.white,
+        toolbarHeight: 84,
         elevation: 7,
-        title: Row(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Image.asset(
-              'assets/df-logo.png',
-              width: 132,
-            ),
-            Icon(
-              Icons.menu,
-              color: brand800,
-            )
-          ],
+        title: Container(
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              const SizedBox(width: 8),
+              Image.asset(
+                'assets/df-2.png',
+                width: 265,
+              ),
+              const SizedBox(
+                width: 75,
+              ),
+              Text(
+                'Home',
+                style: desktopH4.copyWith(color: brand600),
+              ),
+              SizedBox(
+                width: 498,
+              ),
+              Icon(
+                Icons.menu,
+                color: brand800,
+              ),
+            ],
+          ),
         ),
       ),
       body: SingleChildScrollView(
@@ -70,31 +85,8 @@ class LandingPage extends StatelessWidget {
                   style: bodyText16.copyWith(
                       color: neutral700, fontWeight: FontWeight.w600),
                 ),
-                const AboutDeepfakeWidget(
-                    image: '1 1.png',
-                    description:
-                        'Deepfakes can be used to create highly convincing fake videos or audios of public figures.',
-                    imageWidth: 81),
-                const AboutDeepfakeWidget(
-                    image: '2 1.png',
-                    description:
-                        'Deepfake technology poses a significant threat to personal privacy.',
-                    imageWidth: 81),
-                const AboutDeepfakeWidget(
-                    image: '3 2.png',
-                    description:
-                        'Actors, politicians, or any person can fall victim to deepfake manipulation.',
-                    imageWidth: 81),
-                const AboutDeepfakeWidget(
-                    image: '4 3.png',
-                    description:
-                        'Scammers may use deepfake technology to trick individuals.',
-                    imageWidth: 81),
-                const AboutDeepfakeWidget(
-                    image: '5 2.png',
-                    description:
-                        'The rise of deepfakes poses challenges for the legal system to establish accountability and enforce laws against their misuse.',
-                    imageWidth: 81),
+
+                ///himbauan
                 const SizedBox(
                   height: 50,
                 ),
@@ -111,6 +103,25 @@ class LandingPage extends StatelessWidget {
   }
 }
 
+class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
+  const MyAppBar({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Align(
+      alignment: Alignment.centerLeft,
+      child: Container(
+        alignment: Alignment.center,
+        width: 1512,
+        height: 84,
+      ),
+    );
+  }
+
+  @override
+  Size get preferredSize => Size(1512, 84);
+}
+
 class AboutDeepfakeWidget extends StatelessWidget {
   const AboutDeepfakeWidget(
       {super.key,
@@ -121,19 +132,19 @@ class AboutDeepfakeWidget extends StatelessWidget {
   final String image;
   final String description;
   final double imageWidth;
-
+  
   @override
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.only(top: 25),
-      padding: const EdgeInsets.symmetric(horizontal: 12),
+      padding: const EdgeInsets.symmetric(horizontal: 10),
       width: double.infinity,
       height: 165,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(5),
         border: Border.all(width: 1, color: neutral300),
       ),
-      child: Column(
+      child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Image.asset(

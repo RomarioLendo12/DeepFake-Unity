@@ -1,3 +1,4 @@
+import 'package:deepfake/views/landing_page_desktop.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -12,7 +13,7 @@ class DeepFakeApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LandingPage(),
+      home: LandingPageDesktop(),
     );
   }
 }
