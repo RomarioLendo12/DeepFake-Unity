@@ -24,6 +24,9 @@ TextStyle mobileH4 = GoogleFonts.inter(
   fontWeight: FontWeight.w600,
 );
 
+TextStyle gifText =
+    GoogleFonts.juliusSansOne(fontSize: 30, color: Colors.white);
+
 // ** DESKTOP HEADINGS
 TextStyle desktopH1 = GoogleFonts.inter(
   fontSize: 48,
@@ -70,38 +73,38 @@ TextStyle bodyText12 = GoogleFonts.inter(
 // ** COLOR STYLES
 
 // ** NEUTRAL
-Color neutral900 = const Color(0XFF0f172a);
-Color neutral800 = const Color(0XFF1e293b);
-Color neutral700 = const Color(0XFF334155);
-Color neutral600 = const Color(0XFF475569);
-Color neutral500 = const Color(0XFF64748b);
-Color neutral400 = const Color(0XFF94a3b8);
-Color neutral300 = const Color(0XFFcbd5e1);
-Color neutral200 = const Color(0XFFe2e8f0);
-Color neutral100 = const Color(0XFFf1f5f9);
-Color neutral50 = const Color(0XFFf8fafc);
+const Color neutral900 = Color(0XFF0f172a);
+const Color neutral800 = Color(0XFF1e293b);
+const Color neutral700 = Color(0XFF334155);
+const Color neutral600 = Color(0XFF475569);
+const Color neutral500 = Color(0XFF64748b);
+const Color neutral400 = Color(0XFF94a3b8);
+const Color neutral300 = Color(0XFFcbd5e1);
+const Color neutral200 = Color(0XFFe2e8f0);
+const Color neutral100 = Color(0XFFf1f5f9);
+const Color neutral50 = Color(0XFFf8fafc);
 
 // ** BRAND COLOR
-Color brand900 = const Color(0XFF312e81);
-Color brand800 = const Color(0XFF3730a3);
-Color brand700 = const Color(0XFF4338ca);
-Color brand600 = const Color(0XFF4f46e5);
-Color brand500 = const Color(0XFF6366f1);
-Color brand400 = const Color(0XFF818cf8);
-Color brand300 = const Color(0XFFa5b4fc);
-Color brand200 = const Color(0XFFc7d2fe);
-Color brand100 = const Color(0XFFe0e7ff);
-Color brand50 = const Color(0XFFeef2ff);
+const Color brand900 = Color(0XFF312e81);
+const Color brand800 = Color(0XFF3730a3);
+const Color brand700 = Color(0XFF4338ca);
+const Color brand600 = Color(0XFF4f46e5);
+const Color brand500 = Color(0XFF6366f1);
+const Color brand400 = Color(0XFF818cf8);
+const Color brand300 = Color(0XFFa5b4fc);
+const Color brand200 = Color(0XFFc7d2fe);
+const Color brand100 = Color(0XFFe0e7ff);
+const Color brand50 = Color(0XFFeef2ff);
 
 // ** STATUS COLOR
-Color rose600 = const Color(0XFFe11d48);
-Color rose400 = const Color(0XFFfb7185);
-Color rose50 = const Color(0XFFfff1f2);
+const Color rose600 = Color(0XFFe11d48);
+const Color rose400 = Color(0XFFfb7185);
+const Color rose50 = Color(0XFFfff1f2);
 
-Color amber600 = const Color(0XFFd97706);
-Color amber400 = const Color(0XFFf59e0b);
-Color amber100 = const Color(0XFFfef3c7);
+const Color amber600 = Color(0XFFd97706);
+const Color amber400 = Color(0XFFf59e0b);
+const Color amber100 = Color(0XFFfef3c7);
 
-Color teal600 = const Color(0XFF0d9488);
-Color teal400 = const Color(0XFF2dd4bf);
-Color teal50 = const Color(0XFFf0fdfa);
+const Color teal600 = Color(0XFF0d9488);
+const Color teal400 = Color(0XFF2dd4bf);
+const Color teal50 = Color(0XFFf0fdfa);
