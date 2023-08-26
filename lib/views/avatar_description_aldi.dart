@@ -88,7 +88,7 @@ class AvatarDescriptionAldi extends StatelessWidget {
                 ),
                 Image.asset(
                   "assets/aldi_desc.png",
-                  width: 257,
+                  width: 270,
                 ),
                 Container(
                   alignment: Alignment.center,
