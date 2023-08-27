@@ -1,7 +1,9 @@
 import 'package:deepfake/components/custom_button_widget.dart';
 import 'package:deepfake/components/popup_menu_widget.dart';
 import 'package:deepfake/utility.dart';
+import 'package:deepfake/views/deepfake_team_page.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class UploadVideoPage extends StatelessWidget {
   const UploadVideoPage({super.key});
@@ -86,28 +88,36 @@ class UploadVideoPage extends StatelessWidget {
                         const SizedBox(
                           height: 10,
                         ),
-                        Row(
-                          children: [
-                            Icon(
-                              Icons.arrow_forward_ios_rounded,
-                              color: const Color(0XFF847eed).withOpacity(0.7),
-                            ),
-                            const SizedBox(
-                              width: 4,
-                            ),
-                            Text(
-                              'Our Team',
-                              style: bodyText14.copyWith(
-                                  color: brand900, fontWeight: FontWeight.w600),
-                            ),
-                          ],
+                        GestureDetector(
+                          onTap: () {
+                            Get.back();
+                            Get.to(() => const DeepfakeTeamPage(),
+                                transition: Transition.fadeIn);
+                          },
+                          child: Row(
+                            children: [
+                              Icon(
+                                Icons.arrow_forward_ios_rounded,
+                                color: const Color(0XFF847eed).withOpacity(0.7),
+                              ),
+                              const SizedBox(
+                                width: 4,
+                              ),
+                              Text(
+                                'Our Team',
+                                style: bodyText14.copyWith(
+                                    color: brand900,
+                                    fontWeight: FontWeight.w600),
+                              ),
+                            ],
+                          ),
                         ),
                       ],
                     );
                   },
                 );
               },
-              child: Icon(
+              child: const Icon(
                 Icons.menu,
                 color: brand800,
               ),

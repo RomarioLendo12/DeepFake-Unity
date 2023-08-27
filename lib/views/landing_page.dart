@@ -1,5 +1,6 @@
 import 'package:deepfake/components/popup_menu_widget.dart';
 import 'package:deepfake/utility.dart';
+import 'package:deepfake/views/deepfake_team_page.dart';
 import 'package:deepfake/views/information_page.dart';
 import 'package:deepfake/views/upload_video_page.dart';
 import 'package:flutter/material.dart';
@@ -89,28 +90,36 @@ class LandingPage extends StatelessWidget {
                         const SizedBox(
                           height: 10,
                         ),
-                        Row(
-                          children: [
-                            Icon(
-                              Icons.arrow_forward_ios_rounded,
-                              color: const Color(0XFF847eed).withOpacity(0.7),
-                            ),
-                            const SizedBox(
-                              width: 4,
-                            ),
-                            Text(
-                              'Our Team',
-                              style: bodyText14.copyWith(
-                                  color: brand900, fontWeight: FontWeight.w600),
-                            ),
-                          ],
+                        GestureDetector(
+                          onTap: () {
+                            Get.back();
+                            Get.to(() => const DeepfakeTeamPage(),
+                                transition: Transition.fadeIn);
+                          },
+                          child: Row(
+                            children: [
+                              Icon(
+                                Icons.arrow_forward_ios_rounded,
+                                color: const Color(0XFF847eed).withOpacity(0.7),
+                              ),
+                              const SizedBox(
+                                width: 4,
+                              ),
+                              Text(
+                                'Our Team',
+                                style: bodyText14.copyWith(
+                                    color: brand900,
+                                    fontWeight: FontWeight.w600),
+                              ),
+                            ],
+                          ),
                         ),
                       ],
                     );
                   },
                 );
               },
-              child: Icon(
+              child: const Icon(
                 Icons.menu,
                 color: brand800,
               ),
@@ -218,24 +227,6 @@ class LandingPage extends StatelessWidget {
               const SizedBox(
                 height: 50,
               ),
-              Text(
-                'How to made one?',
-                style: mobileH3.copyWith(color: brand900),
-              ),
-              Container(
-                margin: const EdgeInsets.only(
-                    left: 16, right: 16, top: 24, bottom: 50),
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(5), color: brand900),
-                width: double.infinity,
-                height: 205,
-                child: Center(
-                  child: Text(
-                    'Video',
-                    style: mobileH2.copyWith(color: Colors.white),
-                  ),
-                ),
-              ),
               Container(
                 margin: const EdgeInsets.only(left: 32, right: 32, bottom: 15),
                 child: Image.asset(
@@ -286,6 +277,7 @@ class LandingPage extends StatelessWidget {
                               width: 80,
                               height: 44,
                               callback: () {
+                                Get.back();
                                 Get.to(() => const UploadVideoPage(),
                                     transition: Transition.fadeIn);
                               }),
@@ -297,7 +289,7 @@ class LandingPage extends StatelessWidget {
                               Get.back();
                             },
                             style: ElevatedButton.styleFrom(
-                              side: BorderSide(color: rose600),
+                              side: const BorderSide(color: rose600),
                             ),
                             child: Text(
                               'Disagree',
