@@ -68,12 +68,11 @@ class LandingPageDesktop extends StatelessWidget {
                 )
               ],
             ),
-          ),
-          const Spacer(),
+          ),//navbar
           Container(
             //container2 untuk video section
             width: double.infinity,
-            height: 200,
+            height: 941,
             alignment: Alignment.centerLeft,
             color: Colors.black,
             child: Column(
@@ -135,7 +134,7 @@ class LandingPageDesktop extends StatelessWidget {
               children: [
                 Image.asset(
                   "sbjs 1.png",
-                  width: 1119,
+                  width: 119,
                 ),
                 const SizedBox(height: 45),
                 CustomButtonWidget(
