@@ -141,91 +141,307 @@ class DeepfakeTeamPage extends StatelessWidget {
                   showDialog(
                       context: context,
                       builder: (BuildContext ctx) {
-                        return Container();
+                        return const PopUpProfileWidget(
+                          name: 'Fransiscus Xaverius S.',
+                          description:
+                              'A very passionate person. Like to do things with careful planning, supervision on execution, and good documentation. Really like working in a team, either lead or led, able to be in both positions very optimally. Pretty good at learning new things in a short amount of time. Able to manage a hectic schedule and stressful deadlines. You can also checkout his Github official account at https://github.com/xavesenduk',
+                          role: 'Senior Development Lead',
+                          linkedinLink: '',
+                          igLink: '',
+                          image: 'xave',
+                        );
                       });
                 },
                 avatar2: 'ian',
                 name2: 'Febrian G. Lalamentik',
                 role2: 'Development Lead',
-                function2: () => print('ian'),
+                function2: () {
+                  showDialog(
+                      context: context,
+                      builder: (BuildContext ctx) {
+                        return const PopUpProfileWidget(
+                            name: 'Febrian Glorio L.',
+                            linkedinLink: '',
+                            igLink: '',
+                            role: 'Development Lead',
+                            description:
+                                'As a student of Computer Science, he pursuing his interest in becoming a data analyst. He have acquired extensive knowledge in machine learning and data analytics to establish himself as a professional in this field. He have previously engaged in artificial intelligence projects, taught big data concepts to fellow students, worked as a lab assistant, completed relevant courses, and participated in training programs to enhance his skills.',
+                            image: 'ian');
+                      });
+                },
               ),
               MemberProfileContainer(
                 avatar1: 'lens',
                 name1: 'Romario Lendo',
                 role1: 'Flutter Developer',
-                function1: () => print('lens'),
+                function1: () {
+                  showDialog(
+                      context: context,
+                      builder: (BuildContext ctx) {
+                        return const PopUpProfileWidget(
+                            name: 'Romario Lendo',
+                            linkedinLink: '',
+                            igLink: '',
+                            role: 'Flutter Developer',
+                            description:
+                                'He is a highly skilled Flutter developer with a passion for creating elegant and efficient mobile applications. With a strong background in software development and a keen eye for design, He specializes in crafting user-friendly and visually appealing cross-platform applications using Flutter, a popular UI toolkit. He is adept at turning complex ideas into smooth-running and responsive apps.',
+                            image: 'lens');
+                      });
+                },
                 avatar2: 'sadu',
                 name2: 'Gabriel F. Z. Sadu',
                 role2: 'Backend Web Developer',
-                function2: () => print('sadu'),
+                function2: () {
+                  showDialog(
+                      context: context,
+                      builder: (BuildContext ctx) {
+                        return const PopUpProfileWidget(
+                            name: 'Gabriel F.Z. Sadu',
+                            linkedinLink: '',
+                            igLink: '',
+                            role: 'Backend Web Developer',
+                            description:
+                                'Having worked on various web development projects, He excels in designing APIs, implementing complex business logic, and ensuring seamless integration with frontend systems. He is well-versed in handling server deployment, scalability, and security aspects, making sure that the applications he develops perform optimally and are protected from potential threats.',
+                            image: 'sadu');
+                      });
+                },
               ),
               MemberProfileContainer(
                 avatar1: 'kanaya',
                 name1: 'Kanaya Tumade',
                 role1: 'Senior Data Scientist',
-                function1: () => print('kanaya'),
+                function1: () {
+                  showDialog(
+                      context: context,
+                      builder: (BuildContext ctx) {
+                        return const PopUpProfileWidget(
+                            name: 'Kanaya Tumade',
+                            linkedinLink: '',
+                            igLink: '',
+                            role: 'Senior Data Scientist',
+                            description:
+                                'With several years of experience in the field, Kanaya is well-versed in designing and implementing predictive models, clustering algorithms, and advanced analytical techniques. As a problem solver at heart, she approaches each data challenge with a creative and strategic mindset, identifying patterns and trends that lead to actionable recommendations.',
+                            image: 'kanaya');
+                      });
+                },
                 avatar2: 'revo',
                 name2: 'Revo F. R. Ombeng',
                 role2: 'Senior Data Scientist',
-                function2: () => print('revo'),
+                function2: () {
+                  showDialog(
+                      context: context,
+                      builder: (BuildContext ctx) {
+                        return const PopUpProfileWidget(
+                            name: 'Revo F. R. Ombeng',
+                            linkedinLink: '',
+                            igLink: '',
+                            role: 'Senior Data Scientist',
+                            description:
+                                'Revo is an accomplished Senior Data Scientist with a proven track record of driving data-driven insights and solutions. With an extensive background in statistics, machine learning, and programming languages such as Python or R, Revo possesses the expertise to extract valuable knowledge from complex datasets.',
+                            image: 'revo');
+                      });
+                },
               ),
               MemberProfileContainer(
                 avatar1: 'angelina',
                 name1: 'Angelina Chandra',
                 role1: 'Cloud Engineer',
-                function1: () => print('angelina'),
+                function1: () {
+                  showDialog(
+                      context: context,
+                      builder: (BuildContext ctx) {
+                        return const PopUpProfileWidget(
+                            name: 'Angelina Chandra',
+                            linkedinLink: '',
+                            igLink: '',
+                            role: 'Cloud Engineer',
+                            description:
+                                'With a strong focus on continuous improvement, She stays up-to-date with the latest cloud technologies and best practices, ensuring that her solutions are aligned with industry standards and leverage cutting-edge advancements. Her exceptional problem-solving skills, attention to detail, and effective communication make her an invaluable asset in collaborative environments.',
+                            image: 'angelina');
+                      });
+                },
                 avatar2: 'jovanka',
                 name2: 'Jovanka D. Ruindungan',
                 role2: 'Backend Web Developer',
-                function2: () => print('jovanka'),
+                function2: () {
+                  showDialog(
+                      context: context,
+                      builder: (BuildContext ctx) {
+                        return const PopUpProfileWidget(
+                            name: 'Jovanka Ruindungan',
+                            linkedinLink: '',
+                            igLink: '',
+                            role: 'Machine Learning Engineer',
+                            description:
+                                'Jovanka is a highly skilled and motivated Machine Learning Engineer with a passion for leveraging data and cutting-edge algorithms to build intelligent and data-driven solutions. With a strong background in computer science, mathematics, and programming languages like Python, Jovanka possesses a deep understanding of machine learning techniques and methodologies.',
+                            image: 'jovanka');
+                      });
+                },
               ),
               MemberProfileContainer(
                 avatar1: 'triadi',
-                name1: 'Ahmad Triadi Julianto',
+                name1: 'Ahmad Triadi J.',
                 role1: 'User Interface Designer',
-                function1: () => print('triadi'),
+                function1: () {
+                  showDialog(
+                      context: context,
+                      builder: (BuildContext ctx) {
+                        return const PopUpProfileWidget(
+                            name: 'Ahmad Triadi J.',
+                            linkedinLink: '',
+                            igLink: '',
+                            role: 'User Interface Designer',
+                            description:
+                                "Ahmad's design process involves a thorough analysis of user behavior and preferences, allowing him to create interfaces that engage and delight users while optimizing usability and functionality. He collaborates closely with development teams to ensure the seamless implementation of his designs, maintaining design integrity throughout the development lifecycle.",
+                            image: 'triadi');
+                      });
+                },
                 avatar2: 'ridho',
                 name2: 'Ridho Aditya',
                 role2: 'Machine Learning Engineer',
-                function2: () => print('ridho'),
+                function2: () {
+                  showDialog(
+                      context: context,
+                      builder: (BuildContext ctx) {
+                        return const PopUpProfileWidget(
+                            name: 'Ridho Aditya',
+                            linkedinLink: '',
+                            igLink: '',
+                            role: 'Machine Learning Developer',
+                            description:
+                                'Ridho is a highly skilled and motivated Machine Learning Engineer with a passion for leveraging data and cutting-edge algorithms to build intelligent and data-driven solutions. With a strong background in computer science, mathematics, and programming languages like Python, Ridho possesses a deep understanding of machine learning techniques and methodologies.',
+                            image: 'ridho');
+                      });
+                },
               ),
               MemberProfileContainer(
                 avatar1: 'deo',
                 name1: 'Deo Lolowang',
                 role1: 'Machine Learning Engineer',
-                function1: () => print('deo'),
+                function1: () {
+                  showDialog(
+                      context: context,
+                      builder: (BuildContext ctx) {
+                        return const PopUpProfileWidget(
+                            name: 'Deo Lolowang',
+                            linkedinLink: '',
+                            igLink: '',
+                            role: 'Machine Learning Developer',
+                            description:
+                                'Having worked on a wide range of projects, Deo excels in designing and developing machine learning models that solve complex problems and deliver valuable insights. He is proficient in data preprocessing, feature engineering, and model selection, ensuring that the models he builds are accurate, efficient, and scalable.',
+                            image: 'deo');
+                      });
+                },
                 avatar2: 'luke',
                 name2: 'Luke Mawuntu',
                 role2: 'Machine Learning Engineer',
-                function2: () => print('luke'),
+                function2: () {
+                  showDialog(
+                      context: context,
+                      builder: (BuildContext ctx) {
+                        return const PopUpProfileWidget(
+                            name: 'Luke Mawuntu',
+                            linkedinLink: '',
+                            igLink: '',
+                            role: 'Machine Learning Developer',
+                            description:
+                                "Luke`s expertise extends to deep learning frameworks like TensorFlow and PyTorch, enabling him to tackle tasks such as image recognition, natural language processing, and time series analysis. He stays up-to-date with the latest advancements in the field, incorporating state-of-the-art approaches to push the boundaries of what machine learning can achieve.",
+                            image: 'luke');
+                      });
+                },
               ),
               MemberProfileContainer(
                 avatar1: 'galnoel',
                 name1: 'Galnoel Rindengan',
                 role1: 'Machine Learning Engineer',
-                function1: () => print('galnoel'),
+                function1: () {
+                  showDialog(
+                      context: context,
+                      builder: (BuildContext ctx) {
+                        return const PopUpProfileWidget(
+                            name: 'Galnoel Rindengan',
+                            linkedinLink: '',
+                            igLink: '',
+                            role: 'Machine Learning Developer',
+                            description:
+                                'As a problem solver and critical thinker, Galnoel approaches each project with a systematic and analytical mindset, iteratively improving models through experimentation and fine-tuning. His commitment to quality and attention to detail ensure that the solutions he delivers meet and exceed client expectations.',
+                            image: 'galnoel');
+                      });
+                },
                 avatar2: 'satria',
                 name2: 'Satria Maharido Amu',
                 role2: 'Machine Learning Engineer',
-                function2: () => print('satria'),
+                function2: () {
+                  showDialog(
+                      context: context,
+                      builder: (BuildContext ctx) {
+                        return const PopUpProfileWidget(
+                            name: 'Satria',
+                            linkedinLink: '',
+                            igLink: '',
+                            role: 'Machine Learning Developer',
+                            description:
+                                'Satria is a talented and innovative Machine Learning Engineer with a strong background in computer science and a passion for harnessing the power of data to drive intelligent solutions. With a proficiency in programming languages such as Python and R, Satria possesses a deep understanding of machine learning algorithms, statistical analysis, and data manipulation.',
+                            image: 'satria');
+                      });
+                },
               ),
               MemberProfileContainer(
                 avatar1: 'frandi',
                 name1: 'Frandi Andika',
                 role1: 'Cloud Engineer',
-                function1: () => print('frandi'),
+                function1: () {
+                  showDialog(
+                      context: context,
+                      builder: (BuildContext ctx) {
+                        return const PopUpProfileWidget(
+                            name: 'Frandi Andika',
+                            linkedinLink: '',
+                            igLink: '',
+                            role: 'Machine Learning Developer',
+                            description:
+                                'Having worked on various machine learning projects, Frandi excels in designing and developing models that address complex real-world challenges. He is skilled in data preprocessing, feature extraction, and model evaluation, ensuring the accuracy and reliability of his machine learning solutions.',
+                            image: 'frandi');
+                      });
+                },
                 avatar2: 'regina',
                 name2: 'Regina George',
                 role2: 'Machine Learning Engineer',
-                function2: () => print('regina'),
+                function2: () {
+                  showDialog(
+                      context: context,
+                      builder: (BuildContext ctx) {
+                        return const PopUpProfileWidget(
+                            name: 'Regina George',
+                            linkedinLink: '',
+                            igLink: '',
+                            role: 'Machine Learning Developer',
+                            description:
+                                'With a keen eye for detail and a focus on optimization, She fine-tunes models through rigorous experimentation, iteratively refining them to achieve optimal results. She is dedicated to delivering high-quality solutions that provide valuable insights and create tangible impacts for businesses and end-users.',
+                            image: 'regina');
+                      });
+                },
               ),
               SizedBox(
                 width: MediaQuery.of(context).size.width * 0.45,
                 child: MemberProfileWidget(
                   avatar: 'mentari',
                   name: 'Mentari Estefin',
-                  role: '-',
-                  callback: () => print('mentari'),
+                  role: 'Lorem Ipsum',
+                  callback: () {
+                    showDialog(
+                        context: context,
+                        builder: (BuildContext ctx) {
+                          return const PopUpProfileWidget(
+                              name: 'Mentari Estefin',
+                              linkedinLink: '',
+                              igLink: '',
+                              role: 'Lorem Ipsum',
+                              description:
+                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+                              image: 'mentari');
+                        });
+                  },
                 ),
               ),
               const SizedBox(
@@ -416,9 +632,10 @@ class PopUpProfileWidget extends StatelessWidget {
       required this.linkedinLink,
       required this.igLink,
       required this.role,
-      required this.description});
+      required this.description,
+      required this.image});
 
-  final String name, linkedinLink, igLink, role, description;
+  final String name, linkedinLink, igLink, role, description, image;
 
   @override
   Widget build(BuildContext context) {
@@ -432,8 +649,8 @@ class PopUpProfileWidget extends StatelessWidget {
         child: Stack(
           children: [
             Container(
-              margin: const EdgeInsets.only(top: 38),
-              height: 180,
+              margin: const EdgeInsets.only(top: 40),
+              height: 200,
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(5),
@@ -446,37 +663,34 @@ class PopUpProfileWidget extends StatelessWidget {
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
-                      Expanded(
-                        flex: 1,
-                        child: Image.asset(
-                          'assets/xave.png',
-                        ),
+                      Image.asset(
+                        'assets/$image.png',
+                        width: MediaQuery.of(context).size.width * 0.35,
                       ),
                       const SizedBox(
                         width: 10,
                       ),
                       Expanded(
-                        flex: 1,
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              'Fransiscus Xaverius S.',
+                              name,
                               maxLines: 2,
                               overflow: TextOverflow.ellipsis,
                               style: bodyText14.copyWith(
                                   fontWeight: FontWeight.w600),
                             ),
                             const SizedBox(
-                              height: 3,
+                              height: 15,
                             ),
                             Text(
-                              'Senior Development Lead',
+                              role,
                               style: bodyText12.copyWith(
                                   fontSize: 8, color: neutral700),
                             ),
                             const SizedBox(
-                              height: 5,
+                              height: 13,
                             ),
                             Row(
                               children: [
@@ -504,13 +718,16 @@ class PopUpProfileWidget extends StatelessWidget {
                   const SizedBox(
                     height: 7,
                   ),
-                  Text(
-                    'A very passionate person. Like to do things with careful planning, supervision on execution, and good documentation. Really like working in a team, either lead or led, able to be in both positions very optimally. Pretty good at learning new things in a short amount of time. Able to manage a hectic schedule and stressful deadlines. You can also checkout his Github official account at https://github.com/xavesenduk',
-                    textAlign: TextAlign.center,
-                    style: bodyText12.copyWith(
-                        fontSize: 8,
-                        fontWeight: FontWeight.w400,
-                        color: neutral500),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 31),
+                    child: Text(
+                      description,
+                      textAlign: TextAlign.center,
+                      style: bodyText12.copyWith(
+                          fontSize: 8,
+                          fontWeight: FontWeight.w400,
+                          color: neutral500),
+                    ),
                   )
                 ],
               ),
