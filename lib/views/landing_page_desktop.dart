@@ -68,11 +68,11 @@ class LandingPageDesktop extends StatelessWidget {
                 )
               ],
             ),
-          ),//navbar
+          ), //navbar
           Container(
             //container2 untuk video section
+            padding: EdgeInsets.only(left: 94, top: 254, bottom: 356),
             width: double.infinity,
-            height: 941,
             alignment: Alignment.centerLeft,
             color: Colors.black,
             child: Column(
@@ -92,62 +92,320 @@ class LandingPageDesktop extends StatelessWidget {
                 ),
                 Row(
                   children: [
-                    Text(
-                      'Learn More About DeepFake',
-                      style: desktopH2.copyWith(color: Colors.white),
+                    Container(
+                      padding: EdgeInsets.only(
+                          left: 14, top: 3, bottom: 4, right: 12),
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.white)),
+                      child: Text(
+                        'Learn More About DeepFake',
+                        style: desktopH2.copyWith(color: Colors.white),
+                      ),
                     )
                   ],
                 ),
               ],
             ),
+          ), //video section
+          const SizedBox(
+            height: 96,
+          ),
+          Column(
+            children: [
+              Image.asset(
+                "assets/exclamation.png",
+                width: 34,
+              ),
+              const SizedBox(
+                height: 8,
+              ),
+              Text(
+                "About DeepFake",
+                style: desktopH5.copyWith(fontSize: 16),
+              )
+            ],
           ),
           const SizedBox(
-            height: 83,
+            height: 78,
           ),
-          Container(
-            //container3 untuk about widget
-            alignment: Alignment.center,
-            child: const Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Column(
-                        children: [
-                          const AboutDeepfakeWidgetDektop(
-                              image: "1 1.png",
-                              description:
-                                  " Deepfakes can be used to create highly convincing fake videos or audios of public figures.",
-                              imageWidth: 81),
-                        ],
-                      ),
-                    ],
-                  )
-                ]),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                padding: const EdgeInsets.only(
+                    top: 22, right: 11, bottom: 18, left: 11),
+                decoration: BoxDecoration(
+                    border: Border.all(color: neutral300),
+                    borderRadius: BorderRadius.circular(8)),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image.asset(
+                      "assets/1 1.png",
+                      width: 81,
+                    ),
+                    Text(
+                      "Deepfakes can be used to create highly convincing fake\nvideos or audios of public figures.",
+                      style:
+                          desktopH5.copyWith(fontSize: 11, color: neutral500),
+                      textAlign: TextAlign.center,
+                    )
+                  ],
+                ),
+              ),
+              const SizedBox(
+                width: 33,
+              ),
+              Container(
+                padding: const EdgeInsets.only(
+                    top: 28, right: 11, bottom: 23, left: 11),
+                decoration: BoxDecoration(
+                    border: Border.all(color: neutral300),
+                    borderRadius: BorderRadius.circular(8)),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image.asset(
+                      "assets/2 1.png",
+                      width: 81,
+                    ),
+                    Text(
+                      "Deepfake technology poses a significant threat to personal\nprivacy.",
+                      style:
+                          desktopH5.copyWith(fontSize: 11, color: neutral500),
+                      textAlign: TextAlign.center,
+                    )
+                  ],
+                ),
+              ),
+              const SizedBox(
+                width: 33,
+              ),
+              Container(
+                padding: const EdgeInsets.only(
+                    top: 40, right: 11, bottom: 23, left: 11),
+                decoration: BoxDecoration(
+                    border: Border.all(color: neutral300),
+                    borderRadius: BorderRadius.circular(8)),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image.asset(
+                      "assets/3 2.png",
+                      width: 81,
+                    ),
+                    Text(
+                      "Actors, politicians, or any person can fall victim to deepfake\nmanipulation.",
+                      style:
+                          desktopH5.copyWith(fontSize: 11, color: neutral500),
+                      textAlign: TextAlign.center,
+                    )
+                  ],
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(
+            height: 35,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                padding: const EdgeInsets.only(
+                    top: 22, right: 11, bottom: 18, left: 11),
+                decoration: BoxDecoration(
+                    border: Border.all(color: neutral300),
+                    borderRadius: BorderRadius.circular(8)),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image.asset(
+                      "assets/5 2.png",
+                      width: 81,
+                    ),
+                    Text(
+                      "The rise of deepfakes poses challenges for the legal system to\nestablish accountability and enforce laws against their misuse.",
+                      style:
+                          desktopH5.copyWith(fontSize: 11, color: neutral500),
+                      textAlign: TextAlign.center,
+                    )
+                  ],
+                ),
+              ),
+              const SizedBox(
+                width: 33,
+              ),
+              Container(
+                padding: const EdgeInsets.only(
+                    top: 28, right: 11, bottom: 23, left: 11),
+                decoration: BoxDecoration(
+                    border: Border.all(color: neutral300),
+                    borderRadius: BorderRadius.circular(8)),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image.asset(
+                      "assets/4 3.png",
+                      width: 81,
+                    ),
+                    Text(
+                      "Scammers may use deepfake technology to trick individuals.",
+                      style:
+                          desktopH5.copyWith(fontSize: 11, color: neutral500),
+                      textAlign: TextAlign.center,
+                    )
+                  ],
+                ),
+              ),
+            ],
           ),
           const SizedBox(
             height: 52,
           ),
-          Container(
+          Image.asset("assets/sbjs 1.png"),
+          const SizedBox(
+            height: 45,
+          ),
+          Center(
+              child: CustomButtonWidget(
+                  buttonName: "Create Video",
+                  width: 205,
+                  height: 71,
+                  callback: () {})),
+          const SizedBox(height: 130,),
+           Container(
+            //footer
+            color: Colors.black,
+            width: double.infinity,
+            padding: const EdgeInsets.only(
+              left: 177,
+              top: 29,
+              bottom: 28,
+            ),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Image.asset(
-                  "sbjs 1.png",
-                  width: 119,
+                  "assets/logo-2.png",
+                  width: 87,
                 ),
-                const SizedBox(height: 45),
-                CustomButtonWidget(
-                    buttonName: "Create Video",
-                    width: 149,
-                    height: 22,
-                    callback: () {})
+                const SizedBox(
+                  width: 10,
+                ),
+                Text(
+                  "DEEPFAKE\nUNSRAT IT COMMUNITY",
+                  style: desktopH4.copyWith(color: Colors.white),
+                ),
+                const Spacer(),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "About DeepFake",
+                      style:
+                          desktopH5.copyWith(fontSize: 16, color: Colors.white),
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    Text(
+                      "What behind the progress",
+                      style: desktopH5.copyWith(
+                        fontSize: 14,
+                        color: Colors.white,
+                      ),
+                    )
+                  ],
+                ),
+                const SizedBox(
+                  width: 50,
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Contact us",
+                      style:
+                          desktopH5.copyWith(fontSize: 16, color: Colors.white),
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    Text(
+                      "Need anything? Get in touch and\nwe can help.",
+                      style: desktopH5.copyWith(
+                        fontSize: 14,
+                        color: Colors.white,
+                      ),
+                    )
+                  ],
+                ),
+                const SizedBox(
+                  width: 50,
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        Image.asset(
+                          "assets/ig.png",
+                          width: 30,
+                        ),
+                        const SizedBox(
+                          width: 20,
+                        ),
+                        Text(
+                          "unity.unsrat",
+                          style: desktopH5.copyWith(
+                              fontSize: 12, color: Colors.white),
+                        )
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 12,
+                    ),
+                    Row(
+                      children: [
+                        Image.asset(
+                          "assets/linkedin.png",
+                          width: 30,
+                        ),
+                        const SizedBox(
+                          width: 20,
+                        ),
+                        Text(
+                          "UNSRAT IT Community",
+                          style: desktopH5.copyWith(
+                              fontSize: 12, color: Colors.white),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 12,
+                    ),
+                    Row(
+                      children: [
+                        Image.asset(
+                          "assets/facebook.png",
+                          width: 30,
+                        ),
+                        const SizedBox(
+                          width: 20,
+                        ),
+                        Text(
+                          "Unsrat IT Community(Unity)",
+                          style: desktopH5.copyWith(
+                              fontSize: 12, color: Colors.white),
+                        ),
+                      ],
+                    ),
+                  ],
+                )
               ],
             ),
-          ),
-          SizedBox(height: 130,),
-          Container(
-          )
+          ) 
         ],
       ),
     );

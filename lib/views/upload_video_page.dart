@@ -107,7 +107,7 @@ class UploadVideoPage extends StatelessWidget {
                   },
                 );
               },
-              child: Icon(
+              child: const Icon(
                 Icons.menu,
                 color: brand800,
               ),

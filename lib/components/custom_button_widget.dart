@@ -70,10 +70,17 @@ class CustomButtonWidgetWhite extends StatelessWidget {
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(8), color: buttonColor2),
         child: Center(
-          child: Text(
-            buttonName,
-            style: bodyText16.copyWith(
-                fontWeight: FontWeight.w600, color: textColor2),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                buttonName,
+                style: bodyText16.copyWith(
+                    fontWeight: FontWeight.w600, color: textColor2),
+              ),
+              const SizedBox(width: 8,),
+              const Icon(Icons.arrow_back_ios, size: 20,)
+            ],
           ),
         ),
       ),

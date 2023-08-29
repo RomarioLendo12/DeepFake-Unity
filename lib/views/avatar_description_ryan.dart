@@ -87,33 +87,25 @@ class AvatarDescription extends StatelessWidget {
                   height: 21,
                 ),
                 Image.asset(
-                  "assets/ryan_desc.png",
+                  "assets/ryan_desc2.png",
                   width: 257,
                 ),
                 Container(
-                  alignment: Alignment.center,
-                  height: 107,
-                  width: 546,
+                  padding: const EdgeInsets.symmetric(vertical: 29.5, horizontal: 69),
                   decoration: BoxDecoration(
                     color: Color(0xFF312E81),
                     border: Border.all(
                         color: Color(0xFF312E81), style: BorderStyle.solid),
                     borderRadius: BorderRadius.circular(100),
                   ),
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(
-                      vertical: 16,
-                      horizontal: 69,
-                    ),
-                    child: Text("Canadian-American Actor",
-                        style: desktopH3.copyWith(color: Colors.white)),
-                  ),
+                  child: Text("Canadian-American Actor",
+                      style: desktopH3.copyWith(color: Colors.white)),
                 ),
                 const SizedBox(
                   height: 30,
                 ),
                 Text(
-                  "Ryan Rodney Reynolds is a Canadian-born American actor, film producer,\nand businessman. He began his career starring in the Canadian teen\nsoap opera Hillside, and had minor roles before landing the lead role on\nthe sitcom Two Guys and a Girl between 1998 and 2001..",
+                  "Ryan Rodney Reynolds is a Canadian-born American actor, film producer,\nand businessman. He began his career starring in the Canadian teen\nsoap opera Hillside, and had minor roles before landing the lead role on\nthe sitcom Two Guys and a Girl between 1998 and 2001.",
                   textAlign: TextAlign.center,
                   style: desktopH4.copyWith(color: Colors.white),
                 ),
@@ -121,12 +113,18 @@ class AvatarDescription extends StatelessWidget {
                   height: 30,
                 ),
                 CustomButtonWidgetWhite(
-                    buttonName: "Upload Video", width: 200,height: 62,callback: () {}),
+                    buttonName: "Upload Video",
+                    width: 200,
+                    height: 62,
+                    callback: () {}),
               ],
             ),
           ),
-          const SizedBox(height: 76,),
-          Container( //footer
+          const SizedBox(
+            height: 76,
+          ),
+          Container(
+            //footer
             color: Colors.black,
             width: double.infinity,
             padding:

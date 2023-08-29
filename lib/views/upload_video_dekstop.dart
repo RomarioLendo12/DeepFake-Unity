@@ -86,6 +86,7 @@ class DeepFakeProgress extends StatelessWidget {
             height: 118,
           ),
           Container(
+            padding: const EdgeInsets.symmetric(horizontal: 227),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -109,9 +110,6 @@ class DeepFakeProgress extends StatelessWidget {
                     )
                   ],
                 ),
-                const SizedBox(
-                  width: 174,
-                ),
                 Column(
                   children: [
                     Container(
@@ -131,9 +129,6 @@ class DeepFakeProgress extends StatelessWidget {
                       style: desktopH4,
                     )
                   ],
-                ),
-                const SizedBox(
-                  width: 174,
                 ),
                 Column(
                   children: [
@@ -179,12 +174,10 @@ class DeepFakeProgress extends StatelessWidget {
           const SizedBox(
             height: 48,
           ),
-          SizedBox(
-            height: 64,
-            width: 167,
+          Center(
             child: CustomButtonWidget(
               buttonName: "Upload Video",
-              width: 67,
+              width: 167,
               height: 64,
               callback: () {},
               buttonColor: neutral400,
@@ -209,12 +202,17 @@ class DeepFakeProgress extends StatelessWidget {
           const SizedBox(
             height: 67,
           ),
-          Container( //footer
+          Container(
+            //footer
             color: Colors.black,
             width: double.infinity,
-            padding:
-                EdgeInsets.only(left: 177, top: 29, bottom: 28, right: 108),
+            padding: const EdgeInsets.only(
+              left: 177,
+              top: 29,
+              bottom: 28,
+            ),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Image.asset(
                   "assets/logo-2.png",
@@ -227,9 +225,7 @@ class DeepFakeProgress extends StatelessWidget {
                   "DEEPFAKE\nUNSRAT IT COMMUNITY",
                   style: desktopH4.copyWith(color: Colors.white),
                 ),
-                const SizedBox(
-                  width: 94,
-                ),
+                const Spacer(),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -277,6 +273,7 @@ class DeepFakeProgress extends StatelessWidget {
                   width: 50,
                 ),
                 Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
                       children: [
@@ -308,7 +305,8 @@ class DeepFakeProgress extends StatelessWidget {
                         ),
                         Text(
                           "UNSRAT IT Community",
-                          style: desktopH5.copyWith(fontSize: 12),
+                          style: desktopH5.copyWith(
+                              fontSize: 12, color: Colors.white),
                         ),
                       ],
                     ),
@@ -326,7 +324,8 @@ class DeepFakeProgress extends StatelessWidget {
                         ),
                         Text(
                           "Unsrat IT Community(Unity)",
-                          style: desktopH5.copyWith(fontSize: 12),
+                          style: desktopH5.copyWith(
+                              fontSize: 12, color: Colors.white),
                         ),
                       ],
                     ),
