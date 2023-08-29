@@ -88,11 +88,13 @@ class YourVideoDesktop extends StatelessWidget {
         const SizedBox(
           height: 60,
         ),
-        CustomButtonWidget(
-          buttonName: "Generate",
-          width: 198,
-          height: 51,
-          callback: () {},
+        Center(
+          child: CustomButtonWidget(
+            buttonName: "Generate",
+            width: 198,
+            height: 51,
+            callback: () {},
+          ),
         ),
         const SizedBox(
           height: 29,
@@ -106,12 +108,18 @@ class YourVideoDesktop extends StatelessWidget {
             ),
           ),
         ),
-        Container( //footer
+        const SizedBox(height: 207,),
+          Container(
+            //footer
             color: Colors.black,
             width: double.infinity,
-            padding:
-                EdgeInsets.only(left: 177, top: 29, bottom: 28, right: 108),
+            padding: const EdgeInsets.only(
+              left: 177,
+              top: 29,
+              bottom: 28,
+            ),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Image.asset(
                   "assets/logo-2.png",
@@ -124,9 +132,7 @@ class YourVideoDesktop extends StatelessWidget {
                   "DEEPFAKE\nUNSRAT IT COMMUNITY",
                   style: desktopH4.copyWith(color: Colors.white),
                 ),
-                const SizedBox(
-                  width: 94,
-                ),
+                const Spacer(),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -174,6 +180,7 @@ class YourVideoDesktop extends StatelessWidget {
                   width: 50,
                 ),
                 Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
                       children: [
@@ -205,7 +212,8 @@ class YourVideoDesktop extends StatelessWidget {
                         ),
                         Text(
                           "UNSRAT IT Community",
-                          style: desktopH5.copyWith(fontSize: 12),
+                          style: desktopH5.copyWith(
+                              fontSize: 12, color: Colors.white),
                         ),
                       ],
                     ),
@@ -223,7 +231,8 @@ class YourVideoDesktop extends StatelessWidget {
                         ),
                         Text(
                           "Unsrat IT Community(Unity)",
-                          style: desktopH5.copyWith(fontSize: 12),
+                          style: desktopH5.copyWith(
+                              fontSize: 12, color: Colors.white),
                         ),
                       ],
                     ),
@@ -231,7 +240,7 @@ class YourVideoDesktop extends StatelessWidget {
                 )
               ],
             ),
-          ) 
+          ),
       ],
     ));
   }

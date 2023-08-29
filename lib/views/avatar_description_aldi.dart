@@ -130,9 +130,13 @@ class AvatarDescriptionAldi extends StatelessWidget {
           Container( //footer
             color: Colors.black,
             width: double.infinity,
-            padding:
-                EdgeInsets.only(left: 177, top: 29, bottom: 28, right: 108),
+            padding: const EdgeInsets.only(
+              left: 177,
+              top: 29,
+              bottom: 28,
+            ),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Image.asset(
                   "assets/logo-2.png",
@@ -145,9 +149,7 @@ class AvatarDescriptionAldi extends StatelessWidget {
                   "DEEPFAKE\nUNSRAT IT COMMUNITY",
                   style: desktopH4.copyWith(color: Colors.white),
                 ),
-                const SizedBox(
-                  width: 94,
-                ),
+                const Spacer(),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -195,6 +197,7 @@ class AvatarDescriptionAldi extends StatelessWidget {
                   width: 50,
                 ),
                 Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
                       children: [
@@ -226,7 +229,8 @@ class AvatarDescriptionAldi extends StatelessWidget {
                         ),
                         Text(
                           "UNSRAT IT Community",
-                          style: desktopH5.copyWith(fontSize: 12),
+                          style: desktopH5.copyWith(
+                              fontSize: 12, color: Colors.white),
                         ),
                       ],
                     ),
@@ -244,7 +248,8 @@ class AvatarDescriptionAldi extends StatelessWidget {
                         ),
                         Text(
                           "Unsrat IT Community(Unity)",
-                          style: desktopH5.copyWith(fontSize: 12),
+                          style: desktopH5.copyWith(
+                              fontSize: 12, color: Colors.white),
                         ),
                       ],
                     ),
@@ -252,7 +257,7 @@ class AvatarDescriptionAldi extends StatelessWidget {
                 )
               ],
             ),
-          ) //footer
+          ), //footer
         ],
       ),
     );

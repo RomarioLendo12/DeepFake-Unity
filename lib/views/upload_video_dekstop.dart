@@ -333,7 +333,7 @@ class DeepFakeProgress extends StatelessWidget {
                 )
               ],
             ),
-          ) //footer
+          ),//footer
         ],
       ),
     );

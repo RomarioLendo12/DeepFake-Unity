@@ -93,7 +93,7 @@ class LandingPageDesktop extends StatelessWidget {
                 Row(
                   children: [
                     Container(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                           left: 14, top: 3, bottom: 4, right: 12),
                       decoration: BoxDecoration(
                           border: Border.all(color: Colors.white)),
@@ -405,7 +405,7 @@ class LandingPageDesktop extends StatelessWidget {
                 )
               ],
             ),
-          ) 
+          ), //footer
         ],
       ),
     );
