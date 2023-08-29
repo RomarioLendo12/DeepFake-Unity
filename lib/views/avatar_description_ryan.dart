@@ -127,9 +127,13 @@ class AvatarDescription extends StatelessWidget {
             //footer
             color: Colors.black,
             width: double.infinity,
-            padding:
-                EdgeInsets.only(left: 177, top: 29, bottom: 28, right: 108),
+            padding: const EdgeInsets.only(
+              left: 177,
+              top: 29,
+              bottom: 28,
+            ),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Image.asset(
                   "assets/logo-2.png",
@@ -142,9 +146,7 @@ class AvatarDescription extends StatelessWidget {
                   "DEEPFAKE\nUNSRAT IT COMMUNITY",
                   style: desktopH4.copyWith(color: Colors.white),
                 ),
-                const SizedBox(
-                  width: 94,
-                ),
+                const Spacer(),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -192,6 +194,7 @@ class AvatarDescription extends StatelessWidget {
                   width: 50,
                 ),
                 Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
                       children: [
@@ -223,7 +226,8 @@ class AvatarDescription extends StatelessWidget {
                         ),
                         Text(
                           "UNSRAT IT Community",
-                          style: desktopH5.copyWith(fontSize: 12),
+                          style: desktopH5.copyWith(
+                              fontSize: 12, color: Colors.white),
                         ),
                       ],
                     ),
@@ -241,7 +245,8 @@ class AvatarDescription extends StatelessWidget {
                         ),
                         Text(
                           "Unsrat IT Community(Unity)",
-                          style: desktopH5.copyWith(fontSize: 12),
+                          style: desktopH5.copyWith(
+                              fontSize: 12, color: Colors.white),
                         ),
                       ],
                     ),
@@ -249,7 +254,7 @@ class AvatarDescription extends StatelessWidget {
                 )
               ],
             ),
-          ) //footer
+          ),//footer
         ],
       ),
     );
