@@ -254,7 +254,7 @@ class AvatarDescriptionAldi extends StatelessWidget {
                       ],
                     ),
                   ],
-                )
+                ),
               ],
             ),
           ), //footer
