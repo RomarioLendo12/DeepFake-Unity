@@ -1,4 +1,5 @@
 import 'package:deepfake/components/custom_button_widget.dart';
+import 'package:deepfake/components/profile_team.dart';
 import 'package:deepfake/utility.dart';
 import 'package:flutter/material.dart';
 
@@ -86,10 +87,18 @@ class OurTeamDesktop extends StatelessWidget {
             style: desktopH3.copyWith(color: brand900),
           ),
         ),
-        const SizedBox(height: 73,),
+        const SizedBox(
+          height: 73,
+        ),
         Row(
           children: [
             //bikin class untuk tiap profile details
+            ProfileTeam(
+              image: "assets/xave-tes.png",
+              title: "Xaverius Senduk",
+              description: "Senior Development Lead ",
+              imageWidth: 164,
+            )
           ],
         )
       ]),
