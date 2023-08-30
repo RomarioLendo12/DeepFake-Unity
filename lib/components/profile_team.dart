@@ -18,17 +18,18 @@ class ProfileTeam extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           CircleAvatar(
-            radius: 40.0,
+            radius: 80.0,
             child: Image.asset(
               "assets$image",
               width: imageWidth,
             ),
           ),
-          const SizedBox(height: 18,),
-          Text(title, style: desktopH5.copyWith(fontSize: 11)),
           const SizedBox(height: 10,),
+          Text(title, style: desktopH5.copyWith(fontSize: 11)),
+          const SizedBox(height: 3,),
           Text(
             description,
             style: desktopH5.copyWith(fontSize: 8),
@@ -38,14 +39,14 @@ class ProfileTeam extends StatelessWidget {
             children: [
               Image.asset(
                 "assets/linkedin-team.png",
-                width: 10.24,
+                width: 15,
               ),
               const SizedBox(
                 width: 4,
               ),
               Image.asset(
                 "assets/ig-team.png",
-                width: 10.24,
+                width: 15,
               ),
             ],
           )

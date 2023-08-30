@@ -91,14 +91,23 @@ class OurTeamDesktop extends StatelessWidget {
           height: 73,
         ),
         Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            //bikin class untuk tiap profile details
             ProfileTeam(
-              image: "assets/xave-tes.png",
+              image: "/xave-tes.png",
+              title: "Fransiscus Xaverius Senduk",
+              description: "Senior Development Lead ",
+              imageWidth: 164,
+            ),
+            const SizedBox(
+              width: 43,
+            ),
+            ProfileTeam(
+              image: "/xave-tes.png",
               title: "Xaverius Senduk",
               description: "Senior Development Lead ",
               imageWidth: 164,
-            )
+            ),
           ],
         )
       ]),
