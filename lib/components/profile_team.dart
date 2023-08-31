@@ -22,8 +22,9 @@ class ProfileTeam extends StatelessWidget {
         children: [
           CircleAvatar(
             radius: 80.0,
+            backgroundColor: Colors.white,
             child: Image.asset(
-              "assets$image",
+              "assets/$image",
               width: imageWidth,
             ),
           ),

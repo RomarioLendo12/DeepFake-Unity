@@ -90,24 +90,38 @@ class OurTeamDesktop extends StatelessWidget {
         const SizedBox(
           height: 73,
         ),
-        Row(
+        const Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ProfileTeam(
-              image: "/xave-tes.png",
+              image: "xave-tes.png",
               title: "Fransiscus Xaverius Senduk",
               description: "Senior Development Lead ",
               imageWidth: 164,
             ),
-            const SizedBox(
+            SizedBox(
               width: 43,
             ),
             ProfileTeam(
-              image: "/xave-tes.png",
+              image: "febrian-team.png",
               title: "Xaverius Senduk",
               description: "Senior Development Lead ",
               imageWidth: 164,
             ),
+          ],
+        ),
+        const SizedBox(
+          height: 92,
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ProfileTeam(
+              image: "romario-team.png",
+              title: "Romario Lendo",
+              description: "Flutter Developer",
+              imageWidth: 164,
+            )
           ],
         )
       ]),
