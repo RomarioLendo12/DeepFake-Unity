@@ -113,7 +113,7 @@ class OurTeamDesktop extends StatelessWidget {
         const SizedBox(
           height: 92,
         ),
-        Row(
+        const Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ProfileTeam(
@@ -121,9 +121,44 @@ class OurTeamDesktop extends StatelessWidget {
               title: "Romario Lendo",
               description: "Flutter Developer",
               imageWidth: 164,
-            )
+            ),
+            SizedBox(
+              width: 53,
+            ),
+            ProfileTeam(
+                image: "gabriel_team.png",
+                title: "Gabriel F. Z. Sadu",
+                description: "Backend Web Developer",
+                imageWidth: 164),
+            SizedBox(
+              width: 53,
+            ),
+            ProfileTeam(
+                image: "kanaya_team.png",
+                title: "Kanaya Tumbel",
+                description: "Senior Data Scientist",
+                imageWidth: 164),
+            SizedBox(
+              width: 53,
+            ),
+            ProfileTeam(
+                image: "revo_team.png",
+                title: "Revo F. R. Ombeng",
+                description: "Senior Data Scientist",
+                imageWidth: 164),
+            SizedBox(
+              width: 53,
+            ),
+            ProfileTeam(
+                image: "angel_team.png",
+                title: "Angelina Chandra",
+                description: "Cloud Engineer",
+                imageWidth: 164),
           ],
-        )
+        ),
+        const SizedBox(
+          height: 60,
+        ),
       ]),
     );
   }

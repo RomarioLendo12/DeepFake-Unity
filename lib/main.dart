@@ -20,7 +20,7 @@ class DeepFakeApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LandingPageDesktop(),
+      home: OurTeamDesktop(),
     );
   }
 }
