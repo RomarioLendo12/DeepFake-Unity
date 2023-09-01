@@ -104,8 +104,8 @@ class OurTeamDesktop extends StatelessWidget {
             ),
             ProfileTeam(
               image: "febrian-team.png",
-              title: "Xaverius Senduk",
-              description: "Senior Development Lead ",
+              title: "Febrian G. Lalamentik",
+              description: "Development Lead ",
               imageWidth: 164,
             ),
           ],
@@ -204,6 +204,183 @@ class OurTeamDesktop extends StatelessWidget {
         const SizedBox(
           height: 60,
         ),
+        const Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ProfileTeam(
+                image: "gal_team.png",
+                title: "Galnoel Rindengan",
+                description: "Machine Learning Engineer",
+                imageWidth: 164),
+            SizedBox(
+              width: 53,
+            ),
+            ProfileTeam(
+                image: "deo_team.png",
+                title: "Deo Lolowang",
+                description: "Machine Learning Engineer",
+                imageWidth: 164),
+            SizedBox(
+              width: 53,
+            ),
+            ProfileTeam(
+                image: "satria_team.png",
+                title: "Satria Maharido Amu",
+                description: "Machine Learning Engineer",
+                imageWidth: 164),
+            SizedBox(
+              width: 53,
+            ),
+            ProfileTeam(
+                image: "luke_team.png",
+                title: "Luke Mawuntu",
+                description: "Machine Learning Engineer",
+                imageWidth: 164),
+            SizedBox(
+              width: 53,
+            ),
+            ProfileTeam(
+                image: "mentari_team.png",
+                title: "Mentari Estefin",
+                description: "Senior Developer",
+                imageWidth: 164),
+          ],
+        ),
+        const SizedBox(
+          height: 171,
+        ),
+        Container(
+            //footer
+            color: Colors.black,
+            width: double.infinity,
+            padding: const EdgeInsets.only(
+              left: 177,
+              top: 29,
+              bottom: 28,
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Image.asset(
+                  "assets/logo-2.png",
+                  width: 87,
+                ),
+                const SizedBox(
+                  width: 10,
+                ),
+                Text(
+                  "DEEPFAKE\nUNSRAT IT COMMUNITY",
+                  style: desktopH4.copyWith(color: Colors.white),
+                ),
+                const Spacer(),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "About DeepFake",
+                      style:
+                          desktopH5.copyWith(fontSize: 16, color: Colors.white),
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    Text(
+                      "What behind the progress",
+                      style: desktopH5.copyWith(
+                        fontSize: 14,
+                        color: Colors.white,
+                      ),
+                    )
+                  ],
+                ),
+                const SizedBox(
+                  width: 50,
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Contact us",
+                      style:
+                          desktopH5.copyWith(fontSize: 16, color: Colors.white),
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    Text(
+                      "Need anything? Get in touch and\nwe can help.",
+                      style: desktopH5.copyWith(
+                        fontSize: 14,
+                        color: Colors.white,
+                      ),
+                    )
+                  ],
+                ),
+                const SizedBox(
+                  width: 50,
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        Image.asset(
+                          "assets/ig.png",
+                          width: 30,
+                        ),
+                        const SizedBox(
+                          width: 20,
+                        ),
+                        Text(
+                          "unity.unsrat",
+                          style: desktopH5.copyWith(
+                              fontSize: 12, color: Colors.white),
+                        )
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 12,
+                    ),
+                    Row(
+                      children: [
+                        Image.asset(
+                          "assets/linkedin.png",
+                          width: 30,
+                        ),
+                        const SizedBox(
+                          width: 20,
+                        ),
+                        Text(
+                          "UNSRAT IT Community",
+                          style: desktopH5.copyWith(
+                              fontSize: 12, color: Colors.white),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 12,
+                    ),
+                    Row(
+                      children: [
+                        Image.asset(
+                          "assets/facebook.png",
+                          width: 30,
+                        ),
+                        const SizedBox(
+                          width: 20,
+                        ),
+                        Text(
+                          "Unsrat IT Community(Unity)",
+                          style: desktopH5.copyWith(
+                              fontSize: 12, color: Colors.white),
+                        ),
+                      ],
+                    ),
+                  ],
+                )
+              ],
+            ),
+          ),
       ]),
     );
   }
