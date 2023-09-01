@@ -159,6 +159,51 @@ class OurTeamDesktop extends StatelessWidget {
         const SizedBox(
           height: 60,
         ),
+        const Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ProfileTeam(
+                image: "jova_team.png",
+                title: "Jovanka D. Ruindungan",
+                description: "Backend Web Developer",
+                imageWidth: 164),
+            SizedBox(
+              width: 53,
+            ),
+            ProfileTeam(
+                image: "frandi_team.png",
+                title: "Frandika Andika",
+                description: "Cloud Engineer",
+                imageWidth: 164),
+            SizedBox(
+              width: 53,
+            ),
+            ProfileTeam(
+                image: "ridho_team.png",
+                title: "Ridho Aditya",
+                description: "Machine Learning Engineer",
+                imageWidth: 164),
+            SizedBox(
+              width: 53,
+            ),
+            ProfileTeam(
+                image: "triadi_team.png",
+                title: "Ahmad Triadi Julianto M",
+                description: "UI Designer & Frontend Developer",
+                imageWidth: 164),
+            SizedBox(
+              width: 53,
+            ),
+            ProfileTeam(
+                image: "ayang_team.png",
+                title: "Regina George",
+                description: "Machine Learning Engineer",
+                imageWidth: 164),
+          ],
+        ),
+        const SizedBox(
+          height: 60,
+        ),
       ]),
     );
   }
