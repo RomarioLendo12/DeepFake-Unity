@@ -69,7 +69,31 @@ class LearnMoreDesktop extends StatelessWidget {
               ],
             ),
           ),
-        ],
+          const SizedBox(
+            height: 109,
+          ),
+          Center(
+              child: Text(
+            "What is DeepFake?",
+            style: desktopH1.copyWith(color: brand900),
+          )),
+          Row(
+            children: [
+              Image.asset(
+                "assets/slime.png",
+                width: 323,
+              ),
+              const SizedBox(width: 53,),
+              Center(
+                child: Text(
+                  "Deepfake technology involves using advanced artificial intelligence,\nspecifically deep learning algorithms, to create\n highly realistic fake videos or images. It seamlessly swaps\n one person's face or voice onto another's, often with\n astonishing accuracy.",
+                  style: desktopH5.copyWith(fontSize: 18), textAlign: TextAlign.center,
+                ),
+              ),
+          
+            ],
+          )
+        ], //children listview
       ),
     );
   }
