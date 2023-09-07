@@ -1,3 +1,4 @@
+import 'package:deepfake/components/popup_menu_desktop.dart';
 import 'package:deepfake/views/avatar_description_aldi.dart';
 import 'package:deepfake/views/avatar_description_dekan.dart';
 import 'package:deepfake/views/avatar_description_ryan.dart';
@@ -21,7 +22,7 @@ class DeepFakeApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LearnMoreDesktop(),
+      home: AlertDesktop(),
     );
   }
 }
