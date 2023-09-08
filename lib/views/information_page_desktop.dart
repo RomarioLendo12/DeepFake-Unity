@@ -1,6 +1,9 @@
 import 'package:deepfake/utility.dart';
+import 'package:deepfake/views/landing_page_desktop.dart';
+import 'package:deepfake/views/our_team.dart';
 import 'package:flutter/material.dart';
 import 'package:deepfake/components/custom_button_widget.dart';
+import 'package:get/get.dart';
 import 'package:get/get_navigation/src/routes/default_transitions.dart';
 
 class LearnMoreDesktop extends StatelessWidget {
@@ -22,21 +25,39 @@ class LearnMoreDesktop extends StatelessWidget {
                 const SizedBox(
                   width: 51,
                 ),
-                Image.asset(
-                  "assets/df-2.png",
-                  width: 265,
+                InkWell(
+                  onTap: () {
+                    Get.to(() => const LandingPageDesktop(),
+                        transition: Transition.fadeIn);
+                  },
+                  child: Image.asset(
+                    "assets/df-2.png",
+                    width: 265,
+                  ),
                 ),
                 const SizedBox(
                   width: 75,
                 ),
-                Text(
-                  "Home",
-                  style: desktopH4.copyWith(color: brand600),
+                TextButton(
+                  onPressed: () {
+                    Get.to(() => const LandingPageDesktop(),
+                        transition: Transition.fadeIn);
+                  },
+                  child: Text(
+                    "Home",
+                    style: desktopH4.copyWith(color: brand600),
+                  ),
                 ),
                 const SizedBox(width: 75),
-                Text(
-                  "Our Team",
-                  style: desktopH4.copyWith(color: brand600),
+                TextButton(
+                  onPressed: () {
+                    Get.to(() => const OurTeamDesktop(),
+                        transition: Transition.fadeIn);
+                  },
+                  child: Text(
+                    "Our Team",
+                    style: desktopH4.copyWith(color: brand600),
+                  ),
                 ),
                 const Spacer(),
                 CustomButtonWidget(
