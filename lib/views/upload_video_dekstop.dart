@@ -25,9 +25,15 @@ class DeepFakeProgress extends StatelessWidget {
                 const SizedBox(
                   width: 51,
                 ),
-                Image.asset(
-                  "assets/df-2.png",
-                  width: 265,
+               InkWell(
+                  onTap: () {
+                    Get.to(() => const LandingPageDesktop(),
+                        transition: Transition.fadeIn);
+                  },
+                  child: Image.asset(
+                    "assets/df-2.png",
+                    width: 265,
+                  ),
                 ),
                 const SizedBox(
                   width: 75,

@@ -1,6 +1,8 @@
 import 'package:deepfake/components/custom_button_widget.dart';
 import 'package:deepfake/components/popup_menu_desktop.dart';
 import 'package:deepfake/utility.dart';
+import 'package:deepfake/views/information_page.dart';
+import 'package:deepfake/views/information_page_desktop.dart';
 import 'package:deepfake/views/our_team.dart';
 import 'package:deepfake/views/upload_video_dekstop.dart';
 import 'package:flutter/material.dart';
@@ -8,8 +10,7 @@ import 'package:get/get.dart';
 
 class LandingPageDesktop extends StatelessWidget {
   const LandingPageDesktop({super.key});
-  
-  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,22 +27,31 @@ class LandingPageDesktop extends StatelessWidget {
                 const SizedBox(
                   width: 51,
                 ),
-                Image.asset(
-                  "assets/df-2.png",
-                  width: 265,
+                InkWell(
+                  onTap: () {
+                    Get.to(() => const LandingPageDesktop(),
+                        transition: Transition.fadeIn);
+                  },
+                  child: Image.asset(
+                    "assets/df-2.png",
+                    width: 265,
+                  ),
                 ),
                 const SizedBox(
                   width: 75,
                 ),
-                TextButton(onPressed: (){
-                  Get.to(() => const LandingPageDesktop(),
+                TextButton(
+                  onPressed: () {
+                    Get.to(() => const LandingPageDesktop(),
                         transition: Transition.fadeIn);
-                }, child:Text(
-                  "Home",
-                  style: desktopH4.copyWith(color: brand600),
-                ), ),
+                  },
+                  child: Text(
+                    "Home",
+                    style: desktopH4.copyWith(color: brand600),
+                  ),
+                ),
                 const SizedBox(width: 75),
-                 TextButton(
+                TextButton(
                   onPressed: () {
                     Get.to(() => const OurTeamDesktop(),
                         transition: Transition.fadeIn);
@@ -51,7 +61,6 @@ class LandingPageDesktop extends StatelessWidget {
                     style: desktopH4.copyWith(color: brand600),
                   ),
                 ),
-        
                 const Spacer(),
                 CustomButtonWidget(
                   buttonName: 'Log In',
@@ -107,16 +116,21 @@ class LandingPageDesktop extends StatelessWidget {
                 ),
                 Row(
                   children: [
-                    Container(
-                      padding: const EdgeInsets.only(
-                          left: 14, top: 3, bottom: 4, right: 12),
-                      decoration: BoxDecoration(
-                          border: Border.all(color: Colors.white)),
-                      child: Text(
-                        'Learn More About DeepFake',
-                        style: desktopH2.copyWith(color: Colors.white),
-                      ),
-                    )
+                    OutlinedButton(
+                        onPressed: () {
+                           Get.to(() => const LearnMoreDesktop(),
+                        transition: Transition.fadeIn);
+                        },
+                        child: Container(
+                          padding: const EdgeInsets.only(
+                              left: 14, top: 3, bottom: 4, right: 12),
+                          decoration: BoxDecoration(
+                              border: Border.all(color: Colors.white)),
+                          child: Text(
+                            'Learn More About DeepFake',
+                            style: desktopH2.copyWith(color: Colors.white),
+                          ),
+                        )),
                   ],
                 ),
               ],
@@ -288,69 +302,80 @@ class LandingPageDesktop extends StatelessWidget {
                   width: 205,
                   height: 71,
                   callback: () {
-                    showDialog(context: context, builder: (BuildContext ctx){
-                      return PopupMenuWidgetDesktop(contents: [
-                        Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Image.asset(
-                      "assets/exclamation.png",
-                      width: 34,
-                    ),
-                    SizedBox(
-                      width: 6,
-                    ),
-                    Text(
-                      "Warning",
-                      style: desktopH3.copyWith(color: neutral700),
-                    ),
-                  ],
-                ),
-                const SizedBox(
-                  height: 23,
-                ),
-                Text(
-                  "This is a call to action for users and creators alike. As users, we\nmust exercise discernment, fact-check sources, and question the\n veracity of content before sharing. Responsible creators, on the\nother hand, must uphold ethical standards and refrain from using\n deepfakes for malicious purposes.",
-                  textAlign: TextAlign.center,
-                  style: desktopH5.copyWith(fontSize: 20, color: neutral500),
-                ),
-                const SizedBox(
-                  height: 59,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    CustomButtonWidget(
-                      buttonName: "Agree",
-                      width: 83,
-                      height: 44,
-                      callback: () { Get.to(() => const DeepFakeProgress(),
-                                    transition: Transition.fadeIn);}
-                    ),
-                    const SizedBox(
-                      width: 70,
-                    ),
-                    SizedBox(
-                      width: 101,
-                      height: 44,
-                      child: OutlinedButton(
-                          onPressed: () {Get.back();},
-                          style: OutlinedButton.styleFrom(
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(8)),
-                                  side: const BorderSide(color: rose600)),
-                          child: Text(
-                            "Disagree",
-                            style: desktopH5.copyWith(fontSize: 16, color: rose600),
-                          )),
-                    )
-                  ],
-                ),
-        ]);
-                    });
+                    showDialog(
+                        context: context,
+                        builder: (BuildContext ctx) {
+                          return PopupMenuWidgetDesktop(contents: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Image.asset(
+                                  "assets/exclamation.png",
+                                  width: 34,
+                                ),
+                               const  SizedBox(
+                                  width: 6,
+                                ),
+                                Text(
+                                  "Warning",
+                                  style: desktopH3.copyWith(color: neutral700),
+                                ),
+                              ],
+                            ),
+                            const SizedBox(
+                              height: 23,
+                            ),
+                            Text(
+                              "This is a call to action for users and creators alike. As users, we\nmust exercise discernment, fact-check sources, and question the\n veracity of content before sharing. Responsible creators, on the\nother hand, must uphold ethical standards and refrain from using\n deepfakes for malicious purposes.",
+                              textAlign: TextAlign.center,
+                              style: desktopH5.copyWith(
+                                  fontSize: 20, color: neutral500),
+                            ),
+                            const SizedBox(
+                              height: 59,
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                CustomButtonWidget(
+                                    buttonName: "Agree",
+                                    width: 83,
+                                    height: 44,
+                                    callback: () {
+                                      Get.to(() => const DeepFakeProgress(),
+                                          transition: Transition.fadeIn);
+                                    }),
+                                const SizedBox(
+                                  width: 70,
+                                ),
+                                SizedBox(
+                                  width: 101,
+                                  height: 44,
+                                  child: OutlinedButton(
+                                      onPressed: () {
+                                        Get.back();
+                                      },
+                                      style: OutlinedButton.styleFrom(
+                                          shape: RoundedRectangleBorder(
+                                              borderRadius:
+                                                  BorderRadius.circular(8)),
+                                          side:
+                                              const BorderSide(color: rose600)),
+                                      child: Text(
+                                        "Disagree",
+                                        style: desktopH5.copyWith(
+                                            fontSize: 16, color: rose600),
+                                      )),
+                                )
+                              ],
+                            ),
+                          ]);
+                        });
                   })),
-          const SizedBox(height: 130,),
-           Container(
+          const SizedBox(
+            height: 130,
+          ),
+          Container(
             //footer
             color: Colors.black,
             width: double.infinity,
