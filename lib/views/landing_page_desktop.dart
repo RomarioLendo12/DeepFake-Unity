@@ -1,7 +1,9 @@
 import 'package:deepfake/components/custom_button_widget.dart';
 import 'package:deepfake/components/popup_menu_desktop.dart';
 import 'package:deepfake/utility.dart';
+import 'package:deepfake/views/upload_video_dekstop.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class LandingPageDesktop extends StatelessWidget {
   const LandingPageDesktop({super.key});
@@ -311,7 +313,8 @@ class LandingPageDesktop extends StatelessWidget {
                       buttonName: "Agree",
                       width: 83,
                       height: 44,
-                      callback: () {},
+                      callback: () { Get.to(() => const DeepFakeProgress(),
+                                    transition: Transition.fadeIn);}
                     ),
                     const SizedBox(
                       width: 70,
@@ -320,7 +323,7 @@ class LandingPageDesktop extends StatelessWidget {
                       width: 101,
                       height: 44,
                       child: OutlinedButton(
-                          onPressed: () {},
+                          onPressed: () {Get.back();},
                           style: OutlinedButton.styleFrom(
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(8)),
