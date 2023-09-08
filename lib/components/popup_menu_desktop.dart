@@ -9,7 +9,7 @@ class PopupMenuWidgetDesktop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-     return AlertDialogDesktop(
+     return AlertDialog(
       content: Column(
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.center,

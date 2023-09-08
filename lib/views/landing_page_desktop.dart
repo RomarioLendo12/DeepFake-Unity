@@ -1,10 +1,12 @@
 import 'package:deepfake/components/custom_button_widget.dart';
+import 'package:deepfake/components/popup_menu_desktop.dart';
 import 'package:deepfake/utility.dart';
 import 'package:flutter/material.dart';
 
 class LandingPageDesktop extends StatelessWidget {
   const LandingPageDesktop({super.key});
-
+  
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -272,7 +274,67 @@ class LandingPageDesktop extends StatelessWidget {
                   buttonName: "Create Video",
                   width: 205,
                   height: 71,
-                  callback: () {})),
+                  callback: () {
+                    showDialog(context: context, builder: (BuildContext ctx){
+                      return PopupMenuWidgetDesktop(contents: [
+                        Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image.asset(
+                      "assets/exclamation.png",
+                      width: 34,
+                    ),
+                    SizedBox(
+                      width: 6,
+                    ),
+                    Text(
+                      "Warning",
+                      style: desktopH3.copyWith(color: neutral700),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 23,
+                ),
+                Text(
+                  "This is a call to action for users and creators alike. As users, we\nmust exercise discernment, fact-check sources, and question the\n veracity of content before sharing. Responsible creators, on the\nother hand, must uphold ethical standards and refrain from using\n deepfakes for malicious purposes.",
+                  textAlign: TextAlign.center,
+                  style: desktopH5.copyWith(fontSize: 20, color: neutral500),
+                ),
+                const SizedBox(
+                  height: 59,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    CustomButtonWidget(
+                      buttonName: "Agree",
+                      width: 83,
+                      height: 44,
+                      callback: () {},
+                    ),
+                    const SizedBox(
+                      width: 70,
+                    ),
+                    SizedBox(
+                      width: 101,
+                      height: 44,
+                      child: OutlinedButton(
+                          onPressed: () {},
+                          style: OutlinedButton.styleFrom(
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(8)),
+                                  side: const BorderSide(color: rose600)),
+                          child: Text(
+                            "Disagree",
+                            style: desktopH5.copyWith(fontSize: 16, color: rose600),
+                          )),
+                    )
+                  ],
+                ),
+        ]);
+                    });
+                  })),
           const SizedBox(height: 130,),
            Container(
             //footer
