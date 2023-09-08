@@ -9,10 +9,10 @@ class PopupMenuWidgetDesktop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-     return AlertDialog(
+    return AlertDialog(
       content: Container(
-         width: 1048,
-          height: 533,
+        width: 1048,
+        height: 533,
         child: Padding(
           padding: const EdgeInsets.only(left: 200, top: 134, right: 200),
           child: Column(
