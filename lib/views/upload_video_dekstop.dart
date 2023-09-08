@@ -1,7 +1,10 @@
 import 'package:deepfake/components/custom_button_widget.dart';
 import 'package:deepfake/utility.dart';
+import 'package:deepfake/views/landing_page_desktop.dart';
+import 'package:deepfake/views/our_team.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class DeepFakeProgress extends StatelessWidget {
   const DeepFakeProgress({super.key});
@@ -29,14 +32,23 @@ class DeepFakeProgress extends StatelessWidget {
                 const SizedBox(
                   width: 75,
                 ),
-                Text(
+               TextButton(onPressed: (){
+                  Get.to(() => const LandingPageDesktop(),
+                        transition: Transition.fadeIn);
+                }, child:Text(
                   "Home",
                   style: desktopH4.copyWith(color: brand600),
-                ),
+                ), ),
                 const SizedBox(width: 75),
-                Text(
-                  "Our Team",
-                  style: desktopH4.copyWith(color: brand600),
+                TextButton(
+                  onPressed: () {
+                    Get.to(() => const OurTeamDesktop(),
+                        transition: Transition.fadeIn);
+                  },
+                  child: Text(
+                    "Our Team",
+                    style: desktopH4.copyWith(color: brand600),
+                  ),
                 ),
                 const Spacer(),
                 CustomButtonWidget(
@@ -333,7 +345,7 @@ class DeepFakeProgress extends StatelessWidget {
                 )
               ],
             ),
-          ),//footer
+          ), //footer
         ],
       ),
     );
