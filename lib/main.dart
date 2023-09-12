@@ -1,7 +1,6 @@
+import 'package:deepfake/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
-import 'views/landing_page.dart';
 
 void main() => runApp(const DeepFakeApp());
 
@@ -10,9 +9,10 @@ class DeepFakeApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const GetMaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LandingPage(),
+      initialRoute: AppRoutes.initRoute,
+      getPages: AppRoutes.routes,
     );
   }
 }

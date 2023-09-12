@@ -1,4 +1,5 @@
 import 'package:deepfake/components/popup_menu_widget.dart';
+import 'package:deepfake/routes/routes_name.dart';
 import 'package:deepfake/utility.dart';
 import 'package:deepfake/views/deepfake_team_page.dart';
 import 'package:deepfake/views/information_page.dart';
@@ -93,8 +94,7 @@ class LandingPage extends StatelessWidget {
                         GestureDetector(
                           onTap: () {
                             Get.back();
-                            Get.to(() => const DeepfakeTeamPage(),
-                                transition: Transition.fadeIn);
+                            Get.toNamed(RoutesName.teamPage);
                           },
                           child: Row(
                             children: [
@@ -161,8 +161,7 @@ class LandingPage extends StatelessWidget {
                           ),
                           OutlinedButton(
                               onPressed: () {
-                                Get.to(() => const InformationPage(),
-                                    transition: Transition.fadeIn);
+                                Get.toNamed(RoutesName.informationPage);
                               },
                               style: OutlinedButton.styleFrom(
                                 side: const BorderSide(color: Colors.white),
@@ -278,8 +277,7 @@ class LandingPage extends StatelessWidget {
                               height: 44,
                               callback: () {
                                 Get.back();
-                                Get.to(() => const UploadVideoPage(),
-                                    transition: Transition.fadeIn);
+                                Get.toNamed(RoutesName.uploadPage);
                               }),
                           const SizedBox(
                             height: 10,
