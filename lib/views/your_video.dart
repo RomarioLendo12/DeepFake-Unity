@@ -98,7 +98,7 @@ class YourVideoDesktop extends StatelessWidget {
             width: 198,
             height: 51,
             callback: () {
-              showDialog(context: context, builder: (BuildContext ctx){
+              /*showDialog(context: context, builder: (BuildContext ctx){
                 return PopupMenuWidgetDesktop(contents: 
                 [
                             Row(
@@ -165,7 +165,7 @@ class YourVideoDesktop extends StatelessWidget {
                               ],
                             ),
                           ]);
-              });
+              }); */
             },
           ),
         ),

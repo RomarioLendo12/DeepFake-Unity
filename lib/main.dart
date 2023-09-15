@@ -4,6 +4,7 @@ import 'package:deepfake/views/avatar_description_dekan.dart';
 import 'package:deepfake/views/avatar_description_ryan.dart';
 import 'package:deepfake/views/information_page_desktop.dart';
 import 'package:deepfake/views/our_team.dart';
+import 'package:deepfake/views/result_page.dart';
 import 'package:deepfake/views/upload_video_dekstop.dart';
 import 'package:deepfake/views/landing_page_desktop.dart';
 import 'package:deepfake/views/upload_video_page.dart';
@@ -22,7 +23,7 @@ class DeepFakeApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: YourVideoDesktop(),
+      home: ResultPageDesktop(),
     );
   }
 }
