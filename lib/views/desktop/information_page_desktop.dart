@@ -1,6 +1,6 @@
 import 'package:deepfake/utility.dart';
-import 'package:deepfake/views/landing_page_desktop.dart';
-import 'package:deepfake/views/our_team.dart';
+import 'package:deepfake/views/desktop/landing_page_desktop.dart';
+import 'package:deepfake/views/desktop/our_team.dart';
 import 'package:flutter/material.dart';
 import 'package:deepfake/components/custom_button_widget.dart';
 import 'package:get/get.dart';

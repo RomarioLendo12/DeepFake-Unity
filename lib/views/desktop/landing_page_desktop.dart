@@ -2,9 +2,9 @@ import 'package:deepfake/components/custom_button_widget.dart';
 import 'package:deepfake/components/popup_menu_desktop.dart';
 import 'package:deepfake/utility.dart';
 import 'package:deepfake/views/information_page.dart';
-import 'package:deepfake/views/information_page_desktop.dart';
-import 'package:deepfake/views/our_team.dart';
-import 'package:deepfake/views/upload_video_dekstop.dart';
+import 'package:deepfake/views/desktop/information_page_desktop.dart';
+import 'package:deepfake/views/desktop/our_team.dart';
+import 'package:deepfake/views/desktop/upload_video_dekstop.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

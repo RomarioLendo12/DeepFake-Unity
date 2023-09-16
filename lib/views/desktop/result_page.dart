@@ -1,18 +1,18 @@
 import 'package:deepfake/components/custom_button_widget.dart';
-import 'package:deepfake/components/popup_menu_desktop.dart';
-import 'package:deepfake/components/popup_menu_widget.dart';
 import 'package:deepfake/utility.dart';
+import 'package:deepfake/views/desktop/our_team.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class YourVideoDesktop extends StatelessWidget {
-  const YourVideoDesktop({super.key});
+import 'landing_page_desktop.dart';
+
+class ResultPageDesktop extends StatelessWidget {
+  const ResultPageDesktop({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: ListView(
-      children: [
+      body: ListView(children: [
         Container(
           width: double.infinity,
           padding: const EdgeInsets.symmetric(vertical: 22, horizontal: 51),
@@ -24,21 +24,39 @@ class YourVideoDesktop extends StatelessWidget {
               const SizedBox(
                 width: 51,
               ),
-              Image.asset(
-                "assets/df-2.png",
-                width: 265,
+              InkWell(
+                onTap: () {
+                  Get.to(() => const LandingPageDesktop(),
+                      transition: Transition.fadeIn);
+                },
+                child: Image.asset(
+                  "assets/df-2.png",
+                  width: 265,
+                ),
               ),
               const SizedBox(
                 width: 75,
               ),
-              Text(
-                "Home",
-                style: desktopH4.copyWith(color: brand600),
+              TextButton(
+                onPressed: () {
+                  Get.to(() => const LandingPageDesktop(),
+                      transition: Transition.fadeIn);
+                },
+                child: Text(
+                  "Home",
+                  style: desktopH4.copyWith(color: brand600),
+                ),
               ),
               const SizedBox(width: 75),
-              Text(
-                "Our Team",
-                style: desktopH4.copyWith(color: brand600),
+              TextButton(
+                onPressed: () {
+                  Get.to(() => const OurTeamDesktop(),
+                      transition: Transition.fadeIn);
+                },
+                child: Text(
+                  "Our Team",
+                  style: desktopH4.copyWith(color: brand600),
+                ),
               ),
               const Spacer(),
               CustomButtonWidget(
@@ -71,118 +89,71 @@ class YourVideoDesktop extends StatelessWidget {
               )
             ],
           ),
-        ),
+        ), //navbar
         const SizedBox(
-          height: 106,
-        ),
-        Center(
-            child: Text(
-          "Your Video",
-          style: desktopH2.copyWith(color: brand900),
-        )),
-        const SizedBox(
-          height: 60,
-        ),
-        Center(
-          child: Image.asset(
-            "assets/ryan_avatar2.png",
-            width: 621,
-          ),
-        ),
-        const SizedBox(
-          height: 60,
-        ),
-        Center(
-          child: CustomButtonWidget(
-            buttonName: "Generate",
-            width: 198,
-            height: 51,
-            callback: () {
-              /*showDialog(context: context, builder: (BuildContext ctx){
-                return PopupMenuWidgetDesktop(contents: 
-                [
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Image.asset(
-                                  "assets/exclamation.png",
-                                  width: 34,
-                                ),
-                               const  SizedBox(
-                                  width: 6,
-                                ),
-                                Text(
-                                  "Warning",
-                                  style: desktopH3.copyWith(color: neutral700),
-                                ),
-                              ],
-                            ),
-                            const SizedBox(
-                              height: 23,
-                            ),
-                            Text(
-                              "This is a call to action for users and creators alike. As users, we\nmust exercise discernment, fact-check sources, and question the\n veracity of content before sharing. Responsible creators, on the\nother hand, must uphold ethical standards and refrain from using\n deepfakes for malicious purposes.",
-                              textAlign: TextAlign.center,
-                              style: desktopH5.copyWith(
-                                  fontSize: 20, color: neutral500),
-                            ),
-                            const SizedBox(
-                              height: 59,
-                            ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                CustomButtonWidget(
-                                    buttonName: "Agree",
-                                    width: 83,
-                                    height: 44,
-                                    callback: () {
-                                      Get.to(() => const //
-                                          transition: Transition.fadeIn);
-                                    }),
-                                const SizedBox(
-                                  width: 70,
-                                ),
-                                SizedBox(
-                                  width: 101,
-                                  height: 44,
-                                  child: OutlinedButton(
-                                      onPressed: () {
-                                        Get.back();
-                                      },
-                                      style: OutlinedButton.styleFrom(
-                                          shape: RoundedRectangleBorder(
-                                              borderRadius:
-                                                  BorderRadius.circular(8)),
-                                          side:
-                                              const BorderSide(color: rose600)),
-                                      child: Text(
-                                        "Disagree",
-                                        style: desktopH5.copyWith(
-                                            fontSize: 16, color: rose600),
-                                      )),
-                                )
-                              ],
-                            ),
-                          ]);
-              }); */
-            },
-          ),
-        ),
-        const SizedBox(
-          height: 29,
+          height: 36,
         ),
         Center(
           child: Text(
-            "Want to Change the Video?",
-            style: desktopH5.copyWith(
-              fontSize: 16,
-              color: brand400, 
-            ),
+            "Result",
+            style: desktopH1.copyWith(fontSize: 48, color: brand900),
           ),
         ),
-        const SizedBox(height: 207,),
-          Container(
+        const SizedBox(
+          height: 133,
+        ),
+        Center(
+          child: Image.asset(
+            "assets/ryan_result2.png",
+            width: 775,
+            height: 366,
+          ),
+        ),
+        Center(
+          child: Image.asset(
+            "assets/ryan_result.png",
+            width: 775,
+            height: 358,
+          ),
+        ),
+        const SizedBox(
+          height: 55,
+        ),
+        Center(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              CustomButtonWidget(
+                  buttonName: "Download",
+                  width: 198,
+                  height: 67,
+                  callback: () {}),
+              const SizedBox(
+                width: 60,
+              ),
+              SizedBox(
+                width: 198,
+                height: 67,
+                child: OutlinedButton(
+                    onPressed: () {},
+                    style: OutlinedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8)),
+                      side: const BorderSide(color: brand600),
+                    ),
+                    child: Text(
+                      'Regenerate',
+                      style: bodyText16.copyWith(
+                          fontWeight: FontWeight.w600, color: brand600),
+                    )),
+              ),
+              const SizedBox(
+                height: 201,
+              ),
+            ],
+          ),
+        ),
+        Container(
             //footer
             color: Colors.black,
             width: double.infinity,
@@ -314,7 +285,7 @@ class YourVideoDesktop extends StatelessWidget {
               ],
             ),
           ),
-      ],
-    ));
+      ]),
+    );
   }
 }

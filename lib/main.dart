@@ -2,13 +2,13 @@ import 'package:deepfake/components/popup_menu_desktop.dart';
 import 'package:deepfake/views/avatar_description_aldi.dart';
 import 'package:deepfake/views/avatar_description_dekan.dart';
 import 'package:deepfake/views/avatar_description_ryan.dart';
-import 'package:deepfake/views/information_page_desktop.dart';
-import 'package:deepfake/views/our_team.dart';
-import 'package:deepfake/views/result_page.dart';
-import 'package:deepfake/views/upload_video_dekstop.dart';
-import 'package:deepfake/views/landing_page_desktop.dart';
+import 'package:deepfake/views/desktop/information_page_desktop.dart';
+import 'package:deepfake/views/desktop/our_team.dart';
+import 'package:deepfake/views/desktop/result_page.dart';
+import 'package:deepfake/views/desktop/upload_video_dekstop.dart';
+import 'package:deepfake/views/desktop/landing_page_desktop.dart';
 import 'package:deepfake/views/upload_video_page.dart';
-import 'package:deepfake/views/your_video.dart';
+import 'package:deepfake/views/desktop/your_video.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -23,7 +23,7 @@ class DeepFakeApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ResultPageDesktop(),
+      home: LandingPageDesktop(),
     );
   }
 }
