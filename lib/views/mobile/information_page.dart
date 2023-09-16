@@ -1,8 +1,9 @@
 import 'package:deepfake/components/popup_menu_widget.dart';
 import 'package:deepfake/utility.dart';
-import 'package:deepfake/views/deepfake_team_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import 'deepfake_team_page.dart';
 
 class InformationPage extends StatelessWidget {
   const InformationPage({super.key});

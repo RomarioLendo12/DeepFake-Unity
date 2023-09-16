@@ -1,11 +1,12 @@
 import 'package:deepfake/bindings/upload_video_binding.dart';
 import 'package:deepfake/routes/routes_name.dart';
-import 'package:deepfake/views/avatar_information_page.dart';
-import 'package:deepfake/views/deepfake_team_page.dart';
-import 'package:deepfake/views/information_page.dart';
-import 'package:deepfake/views/landing_page.dart';
-import 'package:deepfake/views/upload_video_page.dart';
 import 'package:get/get.dart';
+
+import '../views/mobile/avatar_information_page.dart';
+import '../views/mobile/deepfake_team_page.dart';
+import '../views/mobile/information_page.dart';
+import '../views/mobile/landing_page.dart';
+import '../views/mobile/upload_video_page.dart';
 
 class AppRoutes {
   static const initRoute = RoutesName.landingPage;

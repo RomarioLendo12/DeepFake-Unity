@@ -3,9 +3,10 @@ import 'package:deepfake/components/popup_menu_widget.dart';
 import 'package:deepfake/controllers/upload_video_controller.dart';
 import 'package:deepfake/routes/routes_name.dart';
 import 'package:deepfake/utility.dart';
-import 'package:deepfake/views/deepfake_team_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import 'deepfake_team_page.dart';
 
 class UploadVideoPage extends GetView<UploadVideoController> {
   const UploadVideoPage({super.key});
@@ -278,7 +279,9 @@ class UploadVideoPage extends GetView<UploadVideoController> {
                         buttonName: 'Upload Video',
                         width: 136,
                         height: 44,
-                        callback: () {},
+                        callback: () {
+                          controller.pickVideo();
+                        },
                         buttonColor: brand600,
                         textColor: Colors.white,
                       ),
