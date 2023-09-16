@@ -1,7 +1,6 @@
 import 'package:deepfake/components/custom_button_widget.dart';
 import 'package:deepfake/components/popup_menu_desktop.dart';
 import 'package:deepfake/utility.dart';
-import 'package:deepfake/views/information_page.dart';
 import 'package:deepfake/views/desktop/information_page_desktop.dart';
 import 'package:deepfake/views/desktop/our_team.dart';
 import 'package:deepfake/views/desktop/upload_video_dekstop.dart';
@@ -95,7 +94,7 @@ class LandingPageDesktop extends StatelessWidget {
           ), //navbar
           Container(
             //container2 untuk video section
-            padding: EdgeInsets.only(left: 94, top: 254, bottom: 356),
+            padding: const EdgeInsets.only(left: 94, top: 254, bottom: 356),
             width: double.infinity,
             alignment: Alignment.centerLeft,
             color: Colors.black,

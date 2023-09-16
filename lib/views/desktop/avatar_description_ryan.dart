@@ -1,5 +1,4 @@
 import 'package:deepfake/components/custom_button_widget.dart';
-import 'package:deepfake/components/popup_menu_widget.dart';
 import 'package:deepfake/utility.dart';
 import 'package:flutter/material.dart';
 
@@ -93,9 +92,9 @@ class AvatarDescription extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.symmetric(vertical: 29.5, horizontal: 69),
                   decoration: BoxDecoration(
-                    color: Color(0xFF312E81),
+                    color: const Color(0xFF312E81),
                     border: Border.all(
-                        color: Color(0xFF312E81), style: BorderStyle.solid),
+                        color: const Color(0xFF312E81), style: BorderStyle.solid),
                     borderRadius: BorderRadius.circular(100),
                   ),
                   child: Text("Canadian-American Actor",

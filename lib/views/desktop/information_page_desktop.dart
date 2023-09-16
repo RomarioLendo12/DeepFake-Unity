@@ -4,7 +4,6 @@ import 'package:deepfake/views/desktop/our_team.dart';
 import 'package:flutter/material.dart';
 import 'package:deepfake/components/custom_button_widget.dart';
 import 'package:get/get.dart';
-import 'package:get/get_navigation/src/routes/default_transitions.dart';
 
 class LearnMoreDesktop extends StatelessWidget {
   const LearnMoreDesktop({super.key});
@@ -102,7 +101,7 @@ class LearnMoreDesktop extends StatelessWidget {
           ),
           Center(
             child: Container(
-              padding: EdgeInsets.only(left: 35 , right: 347,),
+              padding: const EdgeInsets.only(left: 35 , right: 347,),
               child:  Row(
               children: [
                 Image.asset(
