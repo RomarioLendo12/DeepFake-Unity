@@ -1,7 +1,6 @@
 import 'package:deepfake/components/popup_menu_desktop.dart';
-import 'package:deepfake/views/avatar_description_aldi.dart';
 import 'package:deepfake/views/avatar_description_dekan.dart';
-import 'package:deepfake/views/avatar_description_ryan.dart';
+import 'package:deepfake/views/desktop/avatar_description_ryan.dart';
 import 'package:deepfake/views/desktop/information_page_desktop.dart';
 import 'package:deepfake/views/desktop/our_team.dart';
 import 'package:deepfake/views/desktop/result_page.dart';
